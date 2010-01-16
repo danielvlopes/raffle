@@ -1,0 +1,7 @@
+build/
+tmp/**/*
+tmp/.*
+tmp/profile*
+.DS_Store
+.project
+Icon?
