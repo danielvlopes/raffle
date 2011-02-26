@@ -6,16 +6,16 @@
 require 'yaml'
 
 class RaffleController < NSWindowController
-	# windows
-	attr_accessor :add_sheet, :main_window
-	# data controls
-	attr_accessor :nameTableView, :prizes
-	# fields
-	attr_accessor :prize_name, :winner_name, :close_button, :email, :participants
+  # windows
+  attr_accessor :add_sheet, :main_window
+  # data controls
+  attr_accessor :nameTableView, :prizes
+  # fields
+  attr_accessor :prize_name, :winner_name, :close_button, :email, :participants
 
   def awakeFromNib
     retrieve_names
-		retrieve_prizes
+    retrieve_prizes
     nameTableView.doubleAction = "edit:"
   end
   
@@ -28,16 +28,19 @@ class RaffleController < NSWindowController
   end
   
   def retrieve_names
-		@names = File.exist?(yaml_file) ? YAML.load_file(yaml_file) : []
+    @names = File.exist?(yaml_file) ? YAML.load_file(yaml_file) : []
     @nameTableView.dataSource = self
   end
-	
-	def retrieve_prizes
+  
+  def retrieve_prizes
     @prizes.removeAllItems
-    ['eGenial - Bolsa curso Ruby', 'Github - 6 meses'].each do |title|
+    ['PeepCode 1º', 'Peepcode 2º', 'Peepcode 3º', 
+     'Curso Rails', 'Curso Ruby', 'Curso BDD', 
+     'Curso Deploy', 'Cloud 2', 'Cloud 3', 'Cloud 4', 
+     'Cloud 5', 'Cloud 6'].each do |title|
       @prizes.addItemWithTitle title
-    end	
-	end
+    end 
+  end
 
   def numberOfRowsInTableView(view)
     @names.size
@@ -59,9 +62,9 @@ class RaffleController < NSWindowController
     @sheet_mode = :add
     close_button.title = 'Adicionar'
     prize_name.stringValue = @prizes.selectedItem.title.to_s
-		winner_name.stringValue = email.stringValue = ''
+    winner_name.stringValue = email.stringValue = ''
     show_panel
-	end
+  end
   
   def edit(sender)
     if nameTableView.selectedRow != -1
@@ -82,9 +85,9 @@ class RaffleController < NSWindowController
     else
       edit_name!
     end
-		@add_sheet.orderOut(nil)
+    @add_sheet.orderOut(nil)
     NSApp.endSheet(@add_sheet)
-	end
+  end
   
   def cancel(sender)
     @add_sheet.orderOut(nil)
@@ -125,31 +128,31 @@ class RaffleController < NSWindowController
     retrieve_names
     nameTableView.reloadData
   end
-	
-	def	do_raffle(sender)
-		if @participants.intValue <= 0
-			alert("Zero participantes", "Por favor defina o número de participantes") 
-		else
-			winner = rand(@participants.intValue)
-			prize	 = @prizes.selectedItem.title.to_s
-			alert("Prêmio #{prize}"," O vencedor foi o nº: #{winner}")
-		end
-	end
-	  
+  
+  def do_raffle(sender)
+    if @participants.intValue <= 0
+      alert("Zero participantes", "Por favor defina o número de participantes") 
+    else
+      winner = rand(@participants.intValue - 1)
+      prize  = @prizes.selectedItem.title.to_s
+      alert("Prêmio #{prize}"," O vencedor foi o nº: #{winner}")
+    end
+  end
+    
   def alert(title='Nada selecionado', message='Você deve selecionar uma linha!', icon="")
-		NSAlert.alertWithMessageText(title, 
-																 defaultButton: 'OK',
-																 alternateButton: nil, 
-																 otherButton: 'Cancelar',
-																 informativeTextWithFormat: message).runModal
+    NSAlert.alertWithMessageText(title, 
+                                 defaultButton: 'OK',
+                                 alternateButton: nil, 
+                                 otherButton: 'Cancelar',
+                                 informativeTextWithFormat: message).runModal
   end
   
   def show_panel
     NSApp.beginSheet(@add_sheet, 
-			modalForWindow:@main_window, 
-			modalDelegate:self, 
-			didEndSelector:nil,
-			contextInfo:nil)
+      modalForWindow:@main_window, 
+      modalDelegate:self, 
+      didEndSelector:nil,
+      contextInfo:nil)
   end
   
 end

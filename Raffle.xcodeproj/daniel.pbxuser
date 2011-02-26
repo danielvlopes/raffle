@@ -1,0 +1,175 @@
+// !$*UTF8*$!
+{
+	10EE8EA51102356300C839B5 /* RaffleController.rb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {757, 2496}}";
+			sepNavSelRange = "{3183, 0}";
+			sepNavVisRange = "{2804, 1183}";
+		};
+	};
+	172754BD107597F200D0347B /* Unit Tests */ = {
+		activeExec = 0;
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 65BDCF5112E37A710094220F /* Raffle */;
+		activeTarget = 8D1107260486CEB800E47090 /* Raffle */;
+		codeSenseManager = 65BDCF5C12E37A7C0094220F /* Code sense */;
+		executables = (
+			65BDCF5112E37A710094220F /* Raffle */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					579,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 320419564;
+			PBXWorkspaceStateSaveDate = 320419564;
+		};
+		perUserProjectItems = {
+			652B211F131936F600A22604 /* PBXTextBookmark */ = 652B211F131936F600A22604 /* PBXTextBookmark */;
+			652B212713193D1400A22604 /* PBXTextBookmark */ = 652B212713193D1400A22604 /* PBXTextBookmark */;
+			652B213413193DE500A22604 /* PBXTextBookmark */ = 652B213413193DE500A22604 /* PBXTextBookmark */;
+			652B213613193E1400A22604 /* PBXTextBookmark */ = 652B213613193E1400A22604 /* PBXTextBookmark */;
+			6544FC291316E4C70020688D = 6544FC291316E4C70020688D /* PBXTextBookmark */;
+			65BDCFAA12E383DA0094220F = 65BDCFAA12E383DA0094220F /* PBXTextBookmark */;
+		};
+		sourceControlManager = 65BDCF5B12E37A7C0094220F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	4D1A51A110A4FF5D0046A98A /* Compile */ = {
+		activeExec = 0;
+	};
+	4D1A51A510A4FF640046A98A /* Embed */ = {
+		activeExec = 0;
+	};
+	652B211F131936F600A22604 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10EE8EA51102356300C839B5 /* RaffleController.rb */;
+		name = "RaffleController.rb: 37";
+		rLen = 0;
+		rLoc = 977;
+		rType = 0;
+		vrLen = 1336;
+		vrLoc = 0;
+	};
+	652B212713193D1400A22604 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10EE8EA51102356300C839B5 /* RaffleController.rb */;
+		name = "RaffleController.rb: 40";
+		rLen = 0;
+		rLoc = 994;
+		rType = 0;
+		vrLen = 920;
+		vrLoc = 412;
+	};
+	652B213413193DE500A22604 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10EE8EA51102356300C839B5 /* RaffleController.rb */;
+		name = "RaffleController.rb: 136";
+		rLen = 0;
+		rLoc = 3417;
+		rType = 0;
+		vrLen = 1132;
+		vrLoc = 2804;
+	};
+	652B213613193E1400A22604 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10EE8EA51102356300C839B5 /* RaffleController.rb */;
+		name = "RaffleController.rb: 128";
+		rLen = 0;
+		rLoc = 3183;
+		rType = 0;
+		vrLen = 1183;
+		vrLoc = 2804;
+	};
+	6544FC291316E4C70020688D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10EE8EA51102356300C839B5 /* RaffleController.rb */;
+		name = "RaffleController.rb: 37";
+		rLen = 0;
+		rLoc = 977;
+		rType = 0;
+		vrLen = 1119;
+		vrLoc = 412;
+	};
+	65BDCF5112E37A710094220F /* Raffle */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Raffle;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	65BDCF5B12E37A7C0094220F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	65BDCF5C12E37A7C0094220F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	65BDCFAA12E383DA0094220F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10EE8EA51102356300C839B5 /* RaffleController.rb */;
+		name = "RaffleController.rb: 90";
+		rLen = 60;
+		rLoc = 2297;
+		rType = 0;
+		vrLen = 823;
+		vrLoc = 1541;
+	};
+	8D1107260486CEB800E47090 /* Raffle */ = {
+		activeExec = 0;
+		executables = (
+			65BDCF5112E37A710094220F /* Raffle */,
+		);
+	};
+}
